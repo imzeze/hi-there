@@ -1,8 +1,15 @@
+import { Div } from '@/atoms';
+import globalStyle from '@/globalStyle';
+import { Global } from '@emotion/react';
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">hi</header>
-    </div>
+    <Div>
+      <Global styles={globalStyle} />
+      <Div width="100%" height="48px" backgroundColor="var(--paleGreen)">
+        HOME
+      </Div>
+    </Div>
   );
 }
 
