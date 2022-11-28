@@ -129,6 +129,11 @@ const globalStyle = css`
   * {
     --paleGreen: #b6e2a1;
   }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 `;
 
 export default globalStyle;
