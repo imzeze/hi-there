@@ -5,7 +5,7 @@ const TabNavigation = () => {
   return (
     <Div
       width="100%"
-      height="60px"
+      height="54px"
       backgroundColor="var(--paleGreen)"
       display="flex"
       justifyContent="space-evenly"

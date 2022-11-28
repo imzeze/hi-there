@@ -9,7 +9,7 @@ const Navigator = ({ children }: NavigatorProps) => {
   return (
     <Div>
       <Header />
-      <Div width="100%" height="calc(100vh - 84px)">
+      <Div width="100%" height="calc(100vh - 102px)">
         {children}
       </Div>
       <TabNavigation />

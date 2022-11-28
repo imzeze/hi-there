@@ -134,6 +134,10 @@ const globalStyle = css`
     text-decoration: none;
     color: inherit;
   }
+
+  div {
+    box-sizing: border-box;
+  }
 `;
 
 export default globalStyle;
