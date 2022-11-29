@@ -1,6 +1,8 @@
 import { atom } from 'recoil';
 
-export const navigateState = atom({
+export const NavigateState = atom<{ header: string | React.ReactNode }>({
   key: 'navigateState',
-  default: {},
+  default: {
+    header: 'HOME',
+  },
 });

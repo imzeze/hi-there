@@ -1,5 +1,7 @@
+import { HomeTemplate } from '@/templates';
+
 const Home = () => {
-  return <>홈</>;
+  return <HomeTemplate />;
 };
 
 export default Home;

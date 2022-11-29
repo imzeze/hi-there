@@ -1,8 +1,12 @@
 import { Link } from 'react-router-dom';
+import { useRecoilValue } from 'recoil';
 
 import { Div } from '@/atoms';
+import { NavigateState } from '@/recoil/common/atom';
 
 const Header = () => {
+  const navigateState = useRecoilValue(NavigateState);
+
   return (
     <Div
       width="100%"
@@ -12,8 +16,8 @@ const Header = () => {
       padding="16px"
     >
       <Link to="/">main</Link>
-      <Div>main</Div>
-      <Div>main</Div>
+      <Div>{navigateState.header}</Div>
+      <Div>로그인</Div>
     </Div>
   );
 };

@@ -1,5 +1,7 @@
+import { AboutTemplate } from '@/templates';
+
 const About = () => {
-  return <>정보</>;
+  return <AboutTemplate />;
 };
 
 export default About;
