@@ -8,6 +8,8 @@ import globalStyle from '@/globalStyle';
 import { Navigator } from '@/organisms';
 import Router from '@/Router';
 
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
 );
@@ -23,3 +25,5 @@ root.render(
     </RecoilRoot>
   </React.StrictMode>,
 );
+
+serviceWorkerRegistration.register();
